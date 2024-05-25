@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <header className=" w-full h-28 py-10 sticky top-0  px-5 md:px-10 lg:px-32 flex items-center justify-between ">
+    <header className=" w-full h-28 py-10 fixed top-0  px-5 md:px-10 lg:px-32 flex items-center justify-between ">
       {/* Logo */}
       <div className="">
         <Link href="/">
           <Image alt="logo image" src="/logo.png" width={200} height={300} />
         </Link>
       </div>
-      <nav className="flex gap-10 text-[whitesmoke] items-center">
+      <nav className="md:flex gap-10 text-[whitesmoke] hidden items-center">
         <ul className="flex flex-row  gap-8">
           <li>
             <Link href="/">About</Link>

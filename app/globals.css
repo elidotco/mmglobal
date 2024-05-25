@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 .hero {
-  background: url("../images/hero1.jpg") no-repeat top;
-  background-size: cover;
+  background: linear-gradient(to left, transparent, #000),
+    url("../images/hero1.jpg"), no-repeat top;
+  background-size: 100% 100%;
 }
 
 .bg-gradient {
