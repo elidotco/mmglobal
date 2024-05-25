@@ -8,7 +8,14 @@ const Navbar = () => {
       {/* Logo */}
       <div className="">
         <Link href="/">
-          <Image alt="logo image" src="/logo.png" width={200} height={300} />
+          <Image
+            alt="logo image"
+            src="/logo1.webp"
+            width={100}
+            height={100}
+            loading="eager"
+            className="md:w-[200px] h-[50px]"
+          />
         </Link>
       </div>
       <nav className="md:flex gap-10 text-[whitesmoke] hidden items-center">

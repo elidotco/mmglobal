@@ -4,7 +4,7 @@
 
 .hero {
   background: linear-gradient(to left, transparent, #000),
-    url("../images/hero1.jpg"), no-repeat top;
+    url("../images/hero.webp"), no-repeat top;
   background-size: 100% 100%;
 }
 
