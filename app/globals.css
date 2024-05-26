@@ -4,9 +4,8 @@
 
 .hero {
   background: linear-gradient(to left, transparent, #000),
-    url("https://img.freepik.com/free-photo/graphic-designer-editing-footage-software-working-edit-video-montage-with-color-grading-audio-effects-sound-film-production-content-making-creative-movie-computer_482257-48019.jpg?t=st=1716561822~exp=1716565422~hmac=f486cb80d470d79b231a56253bf77db1c04070bfff473ece47a437b0e8a09bc7&w=996"),
-    no-repeat top;
-  background-size: 100% 100%;
+    url("../images/hero.webp"), no-repeat top;
+  background-size: cover;
 }
 
 .bg-gradient {
