@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Herosection } from "@/components";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Navbar = () => {
   const navigation = [
@@ -72,8 +73,16 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <div className="px-4 py-2  hover:transition-all duration-100  hover:bg-blue-400 text-black bg-green-400 transition-all hover:duration-150">
-            <Link href="/">Contact us</Link>
+          <div className="">
+            <Link href="/">
+              <div className="relative h-[50px]  justify-center overflow-hidden  text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-600 before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56  px-6 py-3 cursor-pointer bg-[#2596be] flex flex-row items-center gap-1 ">
+                <span className="relative z-10 flex flex-row gap-1 text-md">
+                  {" "}
+                  <MdOutlineArrowRightAlt size={26} />
+                  LET`S TALK
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </nav>
@@ -119,13 +128,16 @@ const Navbar = () => {
                   </a>
                 ))}
               </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
+              <div className="">
+                <Link href="/">
+                  <div className="relative h-[50px]  justify-center overflow-hidden  text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-600 before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56  px-6 py-3 cursor-pointer bg-[#2596be] flex flex-row items-center gap-1 ">
+                    <span className="relative z-10 flex flex-row gap-1">
+                      {" "}
+                      <MdOutlineArrowRightAlt size={26} />
+                      LET`S TALK
+                    </span>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

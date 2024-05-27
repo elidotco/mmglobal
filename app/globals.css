@@ -4,7 +4,8 @@
 
 .hero {
   background: linear-gradient(to left, transparent, #000),
-    url("../images/hero.webp"), no-repeat top;
+    url("https://images.pexels.com/photos/403495/pexels-photo-403495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+    no-repeat top;
   background-size: cover;
 }
 
@@ -16,4 +17,8 @@
   z-index: 100;
   opacity: 0.5;
   top: 0;
+}
+
+.font {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
