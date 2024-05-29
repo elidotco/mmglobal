@@ -10,17 +10,26 @@ import "@splidejs/react-splide/css/sea-green";
 
 // or only core styles
 import "@splidejs/react-splide/css/core";
+import Image from "next/image";
 
 const PortSection = () => {
   return (
-    <div>
-      <div className="flex items-center justify-center">
-        <h3 className="text-6xl font-bold">Studio Portfolio</h3>
+    <div className="bg-white">
+      <div className="flex items-center justify-center w-full border flex-col py-40">
+        <p className="px-5 italic text-md upptext lg:text-xl text-gray-300">
+          Case study
+        </p>
+        <h3 className=" text-4xl lg:text-6xl font-bold text-gray-300">
+          Studio Portfolio
+        </h3>
+        <h3 className=" text-4xl lg:text-6xl text-center font-bold relative -top-6">
+          We have done all projects
+        </h3>
       </div>
 
-      <div className="w-full">
+      <div className="w-full hidden md:block">
         <Splide
-          className="border"
+          className=""
           options={{
             perPage: 3,
 
@@ -29,20 +38,29 @@ const PortSection = () => {
             focus: "center",
             type: "loop",
             interval: 1000,
-            gap: 30,
+            gap: 120,
+            mediaQuery: "min",
           }}
         >
-          <SplideSlide className="active:bg-yellow-300 focus:h-64">
-            <div className="w-full h-56 bg-green-500"></div>
+          <SplideSlide className="active:bg-yellow-300 focus:h-[500px] ">
+            <div className="w-full h-[500px] bg-green-500  carou">
+              <Image
+                src="https://images.pexels.com/photos/2773515/pexels-photo-2773515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="image"
+                width={100}
+                height={100}
+                className="w-full h-full aspect-auto object-cover"
+              />
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-56 border bg-green-500"></div>
+            <div className="w-full h-[500px] border bg-green-500 carou"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-56 border bg-green-500"></div>
+            <div className="w-full h-[500px] border bg-green-500  carou"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full border h-56 bg-red-500"></div>
+            <div className="w-full border h-[500px] bg-red-500  carou"></div>
           </SplideSlide>
         </Splide>
       </div>

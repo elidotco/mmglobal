@@ -24,7 +24,7 @@
   font-weight: 900;
 }
 body {
-  background: whitesmoke;
+  background: rgb(247, 246, 246);
 }
 .icons {
   transition: all 0.4s;
@@ -33,4 +33,15 @@ body {
   width: 40px;
   height: 40px;
   transition: all 0.4s;
+}
+
+@media screen and (min-width: 1600px) {
+  .carou {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+.upptext {
+  font-family: "Times New Roman", Times, serif;
 }
