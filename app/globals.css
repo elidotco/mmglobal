@@ -5,7 +5,7 @@
 .hero {
   background: linear-gradient(to left, transparent, #000),
     url("https://images.pexels.com/photos/403495/pexels-photo-403495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
-    no-repeat top;
+    no-repeat top center;
   background-size: cover;
 }
 
@@ -20,5 +20,17 @@
 }
 
 .font {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: monospace !important;
+  font-weight: 900;
+}
+body {
+  background: whitesmoke;
+}
+.icons {
+  transition: all 0.4s;
+}
+.icons:hover > img {
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s;
 }

@@ -1,4 +1,9 @@
-import { Herosection, WelcomeSection } from "@/components";
+import {
+  Herosection,
+  PortSection,
+  ServiceSection,
+  WelcomeSection,
+} from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +11,8 @@ export default function Home() {
     <main className="">
       <Herosection />
       <WelcomeSection />
+      <ServiceSection />
+      <PortSection />
     </main>
   );
 }
