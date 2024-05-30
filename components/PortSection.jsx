@@ -15,7 +15,7 @@ import Image from "next/image";
 const PortSection = () => {
   return (
     <div className="bg-white">
-      <div className="flex items-center justify-center w-full border flex-col py-40">
+      <div className="flex items-center justify-center w-full flex-col py-40">
         <p className="px-5 italic text-md upptext lg:text-xl text-gray-300">
           Case study
         </p>
@@ -27,6 +27,7 @@ const PortSection = () => {
         </h3>
       </div>
 
+      {/* Projects Carousel */}
       <div className="w-full hidden md:block">
         <Splide
           className=""
@@ -64,6 +65,128 @@ const PortSection = () => {
           </SplideSlide>
         </Splide>
       </div>
+      {/* Projects Carousel */}
+      <h4 className="text-gray-400 text-4xl italic my-20 text-center upptext">
+        Clients
+      </h4>
+      <div class="slider w-full  shadow-md">
+        <div class="slide-track">
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <Image
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* clients Carousel */}
     </div>
   );
 };

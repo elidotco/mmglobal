@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "images.pexels.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "s3-us-west-2.amazonaws.com",
+        port: "",
+      },
     ],
   },
 };
