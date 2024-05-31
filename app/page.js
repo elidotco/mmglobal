@@ -4,6 +4,7 @@ import {
   ServiceSection,
   WelcomeSection,
 } from "@/components";
+import ContactSection from "@/components/ContactSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <WelcomeSection />
       <ServiceSection />
       <PortSection />
+      <ContactSection />
     </main>
   );
 }
