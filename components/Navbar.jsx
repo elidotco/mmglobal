@@ -9,7 +9,7 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Navbar = () => {
   const navigation = [
-    { name: "About", href: "#" },
+    { name: "About", href: "/about" },
     { name: "Services", href: "#" },
     { name: "Portfolio", href: "#" },
   ];
@@ -48,7 +48,7 @@ const Navbar = () => {
               width={100}
               height={100}
               loading="eager"
-              className=" w-auto md:w-[200px] h-[40px]"
+              className=" w-auto  h-[40px] object-cover"
             />
           </Link>
         </div>
