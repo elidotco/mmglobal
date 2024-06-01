@@ -26,7 +26,7 @@ const WelcomeSection = () => {
           {/* Icons */}
           <Image
             alt="logo one"
-            src="/clients.png"
+            src="/clients.webp"
             width={100}
             height={100}
             className="w-14 h-14 hover:w-10 hover:h-10 transition-all hover:transition-all"
@@ -39,7 +39,7 @@ const WelcomeSection = () => {
           {/* Icons */}
           <Image
             alt="logo one"
-            src="/projects.png"
+            src="/projects.webp"
             width={100}
             height={100}
             className="w-14 h-14 hover:w-10 hover:h-10 transition-all hover:transition-all"
@@ -52,7 +52,7 @@ const WelcomeSection = () => {
           {/* Icons */}
           <Image
             alt="logo one"
-            src="/years.png"
+            src="/years.webp"
             width={100}
             height={100}
             className="w-14 h-14 hover:w-10 hover:h-10 transition-all hover:transition-all"
