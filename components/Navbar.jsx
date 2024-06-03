@@ -11,7 +11,7 @@ const Navbar = () => {
   const navigation = [
     { name: "About", href: "/about" },
     { name: "Services", href: "#" },
-    { name: "Portfolio", href: "#" },
+    { name: "Portfolio", href: "/portfolio" },
   ];
   const [scrolling, setScrolling] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
