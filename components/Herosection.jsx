@@ -5,9 +5,10 @@ const Herosection = () => {
   return (
     <section className="w-full h-fit py-10 lg:h-screen hero bg-[whitesmoke]  -z-10 pt-28 flex items-center flex-col gap-10 justify-center">
       <div className="w-full flex flex-col text-center md:text-left  px-5 md:px-10 lg:px-32 justify-start">
-        <h1 className=" text-[40px] md:text-[60px] lg:text-[100px] font-bold text-white lg:leading-[110px] leading-[60px] ">
-          Elevate <br />
-          Your Brand !
+        <h1 className=" text-[40px] md:text-[60px] 2xl:text-[110px] font-bold text-white 2xl:leading-[110px] leading-[40px] lg:text-[80px] lg:leading-[80px] x ">
+          OUR WORK <br /> <span className="text-[#2596be]">AMPLIFIES</span>
+          <br />
+          YOUR IDEAS
         </h1>
       </div>
       {/* Learn More Button */}

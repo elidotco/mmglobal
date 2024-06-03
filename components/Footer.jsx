@@ -50,7 +50,7 @@ const Footer = () => {
               </li>
               <li>
                 <a className="" href="/services">
-                  Our pillar
+                  Our pillars
                 </a>
               </li>
             </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-gray-800 text-white py-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" bg-gray-800 text-white py-5 w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <h3 className="text-xl font-semibold">MM GLOBAL</h3>

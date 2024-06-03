@@ -5,7 +5,7 @@ const ContactSection = () => {
     <div className="bg-[#2596be] py-32 w-full px-5 md:px-10 lg:px-32">
       <div
         className=" flex items-center
-       px-4 s:px-8 w-full justify-between"
+       px-4 s:px-8 w-full justify-between flex-col md:flex-row"
       >
         <div className="text-center">
           {/* <h2 className="text-base text-orang font-semibold tracking-wide uppercase">

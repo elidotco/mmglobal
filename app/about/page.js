@@ -1,7 +1,8 @@
 "use client";
-
 import ContactSection from "@/components/ContactSection";
 import Crumb from "@/components/Crumb";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -63,7 +64,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full h-fit py-20 sect px-5 sm:px-10 lg:px-28">
+      <div className="w-full h-fit py-32 sect px-5 sm:px-10 lg:px-28">
         <h3 className="text-center text-4xl font-bold pb-20 ">
           {" "}
           <span className="text-[#2596be] ">Our</span> Pillars
@@ -107,6 +108,47 @@ export default function Home() {
         </div>
       </div>
       {/* Contact Section with location */}
+      <div>
+        {/* team Carousel */}
+        <div className="w-full hidden md:block">
+          <Splide
+            className=""
+            options={{
+              perPage: 3,
+              pagination: false,
+              autoplay: true,
+              arrows: false,
+              focus: "center",
+              type: "loop",
+              interval: 1000,
+              gap: 60,
+              mediaQuery: "min",
+            }}
+          >
+            <SplideSlide className="active:bg-yellow-300 focus:h-[500px] ">
+              <div className="w-full h-[300px] bg-green-500  carou">
+                <Image
+                  src="https://images.pexels.com/photos/2773515/pexels-photo-2773515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="image"
+                  width={100}
+                  height={100}
+                  className="w-full h-full aspect-auto object-cover"
+                />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="w-full h-[300px] border bg-green-500 carou"></div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="w-full h-[300px] border bg-green-500  carou"></div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="w-full border h-[300px] bg-red-500  carou"></div>
+            </SplideSlide>
+          </Splide>
+        </div>
+        {/* team Carousel */}
+      </div>
       <ContactSection />
     </main>
   );
