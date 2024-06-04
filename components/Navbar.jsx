@@ -47,6 +47,7 @@ const Navbar = () => {
               src="/logo1.webp"
               width={100}
               height={100}
+              priority="true"
               loading="eager"
               className=" w-auto  h-[40px] object-cover"
             />

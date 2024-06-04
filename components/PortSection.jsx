@@ -69,9 +69,9 @@ const PortSection = () => {
       <h4 className="text-gray-400 text-4xl italic my-20 text-center upptext">
         Clients
       </h4>
-      <div class="slider w-full  shadow-md">
-        <div class="slide-track">
-          <div class="slide">
+      <div className="slider w-full  shadow-md">
+        <div className="slide-track">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
               height="100"
@@ -79,7 +79,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
               height="100"
@@ -87,7 +87,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
               height="100"
@@ -95,7 +95,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
               height="100"
@@ -103,7 +103,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
               height="100"
@@ -111,7 +111,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
               height="100"
@@ -119,7 +119,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
               height="100"
@@ -127,7 +127,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
               height="100"
@@ -135,7 +135,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
               height="100"
@@ -143,7 +143,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
               height="100"
@@ -151,7 +151,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
               height="100"
@@ -159,7 +159,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
               height="100"
@@ -167,7 +167,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
               height="100"
@@ -175,7 +175,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
               height="100"
