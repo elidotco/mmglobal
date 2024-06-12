@@ -13,18 +13,6 @@ import { client } from "@/sanity";
 import { useEffect } from "react";
 
 // Fetch content with GROQ
-async function getContent() {
-  const CONTENT_QUERY = `*[_type == "service"] {
-  ...,
-  icon {
-    ...,
-    asset->
-  }
-}
-`;
-  const content = await client.fetch(CONTENT_QUERY);
-  return content;
-}
 
 // Log content to console
 
@@ -39,7 +27,7 @@ export default function Home() {
         
           
     
-          }
+          
         }
   `
       )
