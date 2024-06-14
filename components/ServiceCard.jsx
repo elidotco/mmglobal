@@ -1,6 +1,6 @@
 import React from "react";
 
-const ServiceCard = ({ one }) => {
+const ServiceCard = ({ one, data }) => {
   if (one) {
     return (
       <div className="flex w-full flex-col-reverse md:flex-row gap-20 2xl:px-20 h-fit py-20 items-center ">
@@ -12,15 +12,10 @@ const ServiceCard = ({ one }) => {
           <p className="w-fit px-4 py-4 bg-orange-400 my-5">Icon</p>
           {/* Icon */}
           {/* Title */}
-          <p className="text-2xl font-bold ">Title</p>
-          {/* Title */}
+          <p className="text-2xl font-bold ">{data.title}</p>
+          {/*  */}
           {/* Description */}
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-            minima aspernatur unde assumenda, ipsam provident repellat
-            voluptates dicta architecto tenetur, velit perferendis debitis
-            laborum! Commodi alias ex officiis quis blanditiis!
-          </p>
+          <p>{data.description}</p>
           {/* Description */}
         </div>
       </div>
@@ -32,16 +27,11 @@ const ServiceCard = ({ one }) => {
         {/* Icon */}
         <p className="w-fit px-4 py-4 bg-orange-400 my-5">Icon</p>
         {/* Icon */}
-        {/* Title */}
-        <p className="text-2xl font-bold ">Title</p>
+        {/*  */}
+        <p className="text-2xl font-bold ">{data.title}</p>
         {/* Title */}
         {/* Description */}
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-          minima aspernatur unde assumenda, ipsam provident repellat voluptates
-          dicta architecto tenetur, velit perferendis debitis laborum! Commodi
-          alias ex officiis quis blanditiis!
-        </p>
+        <p>{data.description}</p>
         {/* Description */}
       </div>
       {/* Images */}

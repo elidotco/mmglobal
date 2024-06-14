@@ -1,27 +1,31 @@
-import { defineType, defineField } from 'sanity'
+import {defineType, defineField} from 'sanity'
 
 export const service = defineType({
-  type: "document",
-  name: "service",
+  type: 'document',
+  name: 'service',
   fields: [
     defineField({
-      type: "string",
-      name: "title",
+      type: 'string',
+      name: 'title',
     }),
     defineField({
-      type: "slug",
-      name: "slug",
-      options: { source: "title" },
+      type: 'slug',
+      name: 'slug',
+      options: {source: 'title'},
     }),
     defineField({
-      type: "text",
-      name: "description",
+      type: 'text',
+      name: 'description',
     }),
     defineField({
-      type: "image",
-      name: "icon",
-      options: { hotspot: true },
+      type: 'image',
+      name: 'icon',
+      options: {hotspot: true},
+    }),
+    defineField({
+      type: 'image',
+      name: 'image',
+      options: {hotspot: true},
     }),
   ],
-});
-
+})
