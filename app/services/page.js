@@ -1,5 +1,6 @@
 "use client";
 
+import { LoaderScreen } from "@/components";
 import ContactSection from "@/components/ContactSection";
 import Crumb from "@/components/Crumb";
 import ServiceCard from "@/components/ServiceCard";
@@ -33,11 +34,7 @@ export default function Home() {
   }, []);
 
   if (loading) {
-    return (
-      <div className="w-full h-screen absolute top-0 left-0 bg-white text-center z-50">
-        Loading...
-      </div>
-    ); // Render loading state
+    return <LoaderScreen />; // Render loading state
   }
   console.log(data);
   return (

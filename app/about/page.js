@@ -110,7 +110,7 @@ export default function Home() {
       {/* Contact Section with location */}
       <div>
         {/* team Carousel */}
-        <div className="w-full hidden md:block">
+        {/* <div className="w-full hidden md:block">
           <Splide
             className=""
             options={{
@@ -146,7 +146,7 @@ export default function Home() {
               <div className="w-full border h-[300px] bg-red-500  carou"></div>
             </SplideSlide>
           </Splide>
-        </div>
+        </div> */}
         {/* team Carousel */}
       </div>
       <ContactSection />

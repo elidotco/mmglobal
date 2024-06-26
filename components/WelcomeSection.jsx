@@ -14,9 +14,9 @@ const WelcomeSection = () => {
       />
       <div className="flex  text-3xl justify-center mt-10 px-5 md:px-12">
         <h2 className="text-[30px] lg:text-[41.5px] font leading-[1] text-center ">
-          We have Partnered With Various High-Level Institutions to Create
-          Innovative Products that{" "}
-          <span className="text-[#2596be]">changes Public Perception</span>
+          We have Partnered Various High-Level Institutions to Create Innovative
+          Products that{" "}
+          <span className="text-[#2596be]">change Public Perception</span>
         </h2>
       </div>
 
