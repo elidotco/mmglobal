@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="bg-white">
-      <Crumb title="Case Study" span="" />
+      <Crumb title="Portfolio" span="" />
 
       <div className="flex items-center justify-center w-full flex-col py-40">
         <h3 className=" text-4xl lg:text-6xl font-bold text-gray-300">

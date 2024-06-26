@@ -15,7 +15,7 @@ const ServiceSection = ({ data }) => {
           We provide solutions
         </h3>
 
-        <Link href="/">
+        <Link href="/" className="hidden">
           <div className=" cursor-pointer border-2  border-white relative h-[50px]  justify-center overflow-hidden  text-black shadow-2xl transition-all before:absolute before:h-0 before:w-0 bg-white before:rounded-full before:bg-black before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 hover:text-white px-6 py-3 hover:border-black flex flex-row items-center gap-1 ">
             <span className="relative z-10 flex flex-row gap-1 items-center">
               {" "}
@@ -39,6 +39,25 @@ const ServiceSection = ({ data }) => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className=" items-center  relative justify-between gap-y-20 md:gap-y-6 flex-col md:flex-row  px-5 md:px-10">
+        <h3 className=" hidden text-4xl md:text-6xl font-semibold text-gray-300">
+          Our services
+        </h3>
+        <h3 className=" hidden text-4xl md:text-6xl absolute lg:left-14 top-5 md:top-7  font-semibold">
+          We provide solutions
+        </h3>
+
+        <Link href="/" className="">
+          <div className=" cursor-pointer border-2  border-white relative h-[50px]  justify-center w-56 ml-auto overflow-hidden  text-black shadow-2xl transition-all before:absolute before:h-0 before:w-0 bg-white before:rounded-full before:bg-black before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 hover:text-white px-6 py-3 hover:border-black flex flex-row items-center gap-1 ">
+            <span className="relative z-10 flex flex-row gap-1 items-center">
+              {" "}
+              <MdOutlineArrowRightAlt size={26} />
+              OTHER SERVICES{" "}
+            </span>
+          </div>
+        </Link>
       </div>
     </div>
   );
