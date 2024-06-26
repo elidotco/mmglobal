@@ -19,7 +19,7 @@ const Herosection = () => {
               <span className="relative z-10 flex flex-row gap-1">
                 {" "}
                 <MdOutlineArrowRightAlt size={26} />
-                GET A QUOTE
+                BOOK NOW
               </span>
             </div>
           </Link>
