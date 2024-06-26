@@ -26,7 +26,7 @@ export default function Home() {
     client
       .fetch(
         `
-        *[_type == "service"][1...5]{
+        *[_type == "service"][0...4]{
           
           title,
           icon
