@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white">
-              Facebook
+              Tiktok
             </a>
             <a href="#" className="text-gray-400 hover:text-white">
               Twitter

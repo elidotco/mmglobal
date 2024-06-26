@@ -5,3 +5,4 @@ export { default as ServiceSection } from "./ServiceSection";
 export { default as PortSection } from "./PortSection";
 export { default as Footer } from "./Footer";
 export { default as ProjectCard } from "./ProjectCard";
+export { default as LoaderScreen } from "./LoaderScreen";

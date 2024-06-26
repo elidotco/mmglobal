@@ -2,6 +2,7 @@
 
 import {
   Herosection,
+  LoaderScreen,
   PortSection,
   ServiceSection,
   WelcomeSection,
@@ -43,11 +44,7 @@ export default function Home() {
   }, []);
 
   if (loading) {
-    return (
-      <div className="w-full h-screen absolute top-0 left-0 bg-white text-center z-50">
-        Loading...
-      </div>
-    ); // Render loading state
+    return <LoaderScreen />; // Render loading state
   }
 
   return (

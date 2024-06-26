@@ -43,25 +43,25 @@ const PortSection = () => {
             mediaQuery: "min",
           }}
         >
-          <SplideSlide className="active:bg-yellow-300 focus:h-[500px] ">
-            <div className="w-full h-[500px] bg-green-500  carou">
+          <SplideSlide className=" ">
+            <div className="w-full bg-green-500  carou">
               <Image
                 src="https://images.pexels.com/photos/2773515/pexels-photo-2773515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="image"
                 width={100}
                 height={100}
-                className="w-full h-full aspect-auto object-cover"
+                className="w-full h-full object-fit"
               />
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-[500px] border bg-green-500 carou"></div>
+            <div className="w-full  border bg-green-500 carou"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full h-[500px] border bg-green-500  carou"></div>
+            <div className="w-full  border bg-green-500  carou"></div>
           </SplideSlide>
           <SplideSlide>
-            <div className="w-full border h-[500px] bg-red-500  carou"></div>
+            <div className="w-full border  bg-red-500  carou"></div>
           </SplideSlide>
         </Splide>
       </div>
