@@ -22,9 +22,7 @@ const PortSection = () => {
         <h3 className=" text-4xl lg:text-6xl font-bold text-gray-300">
           Studio Portfolio
         </h3>
-        <h3 className=" text-4xl lg:text-6xl text-center font-bold relative -top-6">
-          We have done all projects
-        </h3>
+        <h3 className=" text-4xl lg:text-6xl text-center font-bold relative -top-6"></h3>
       </div>
 
       {/* Projects Carousel */}
