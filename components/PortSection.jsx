@@ -101,6 +101,7 @@ const PortSection = () => {
               alt=""
             />
           </div>
+
           <div className="slide">
             <Image
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
