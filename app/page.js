@@ -44,7 +44,7 @@ export default function Home() {
   }, []);
 
   if (loading) {
-    return <LoaderScreen />; // Render loading state
+    return <div>LODING</div>; // Render loading state
   }
 
   return (
