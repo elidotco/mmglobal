@@ -44,7 +44,7 @@ export default function Home() {
   }, []);
 
   if (loading) {
-    return <div className="w-full h-full">LODING</div>; // Render loading state
+    return <div className="w-full h-full bg-white">LODING</div>; // Render loading state
   }
 
   return (
