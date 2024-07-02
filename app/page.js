@@ -4,7 +4,6 @@ import {
   Herosection,
   LoaderScreen,
   PortSection,
-  ServiceSection,
   WelcomeSection,
 } from "@/components";
 import ContactSection from "@/components/ContactSection";
@@ -13,6 +12,8 @@ import Image from "next/image";
 import { client } from "@/sanity";
 import { useEffect, useState } from "react";
 // Fetch content with GROQ
+import dynamic from "next/dynamic";
+const ServiceSection = dynamic(() => import("../components/ServiceSection"));
 
 // Log content to console
 
