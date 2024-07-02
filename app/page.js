@@ -45,7 +45,9 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div className="w-full h-full bg-white absolute top-0 z-50">LODING</div>
+      <div className="w-full h-full bg-white absolute top-0 z-[100]">
+        LODING
+      </div>
     ); // Render loading state
   }
 
