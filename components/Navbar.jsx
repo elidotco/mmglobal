@@ -74,7 +74,7 @@ const Navbar = () => {
             </a>
           ))}
           <div className="">
-            <Link href="/">
+            <Link href="/#footer">
               <div className="relative h-[50px]  justify-center overflow-hidden  text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-600 before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56  px-6 py-3 cursor-pointer bg-[#2596be] flex flex-row items-center gap-1 ">
                 <span className="relative z-10 flex flex-row gap-1 text-md">
                   {" "}
