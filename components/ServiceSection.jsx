@@ -48,7 +48,7 @@ const ServiceSection = ({ data }) => {
           We provide solutions
         </h3>
 
-        <Link href="/" className="">
+        <Link href="/services" className="">
           <div className=" cursor-pointer border-2  border-white relative h-[50px]  justify-center w-56 ml-auto overflow-hidden  text-black shadow-2xl transition-all before:absolute before:h-0 before:w-0 bg-white before:rounded-full before:bg-black before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 hover:text-white px-6 py-3 hover:border-black flex flex-row items-center gap-1 ">
             <span className="relative z-10 flex flex-row gap-1 items-center">
               {" "}

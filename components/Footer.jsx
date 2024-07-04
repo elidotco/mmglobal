@@ -6,7 +6,7 @@ const Footer = () => {
   // Get the current year
   const currentYear = currentDate.getFullYear();
   return (
-    <footer className="  relative w-full  bottom-0">
+    <footer className="  relative w-full  bottom-0" id="#">
       <div className="px-5 sm:px-10 lg:px-32 pb-20 footer text-white z-20">
         <h3 className="w-full text-3xl text-center justify-between font-bold py-20 ">
           We collaborate with production partners and visionary filmmakers

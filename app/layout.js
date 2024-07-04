@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components";
+import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("../components/Footer"));
 
 const inter = Inter({ subsets: ["latin"] });
