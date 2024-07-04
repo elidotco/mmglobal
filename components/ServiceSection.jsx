@@ -3,7 +3,6 @@ import React from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const ServiceSection = ({ data }) => {
-  console.log(data);
   return (
     <div className="lg:py-20 py-10">
       <p className="px-5 italic text-xl text-gray-300 upptext">What we are</p>

@@ -11,8 +11,9 @@ import "@splidejs/react-splide/css/sea-green";
 // or only core styles
 import "@splidejs/react-splide/css/core";
 import Image from "next/image";
+import { urlFor } from "@/sanity";
 
-const PortSection = () => {
+const PortSection = ({ data }) => {
   return (
     <div className="bg-white">
       <div className="flex items-center justify-center w-full flex-col py-40">
@@ -69,119 +70,18 @@ const PortSection = () => {
       </h4>
       <div className="slider w-full  shadow-md">
         <div className="slide-track">
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-              height="100"
-              width="250"
-              alt=""
-            />
-          </div>
+          {data?.map((item, index) => {
+            return (
+              <div className="slide" key={index}>
+                <Image
+                  src={urlFor(item.image).width(200).url()}
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
 

@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  Herosection,
-  LoaderScreen,
-  PortSection,
-  WelcomeSection,
-} from "@/components";
+import { Herosection, WelcomeSection } from "@/components";
 import ContactSection from "@/components/ContactSection";
 import Image from "next/image";
 
@@ -14,6 +9,7 @@ import { useEffect, useState } from "react";
 // Fetch content with GROQ
 import dynamic from "next/dynamic";
 const ServiceSection = dynamic(() => import("../components/ServiceSection"));
+const PortSection = dynamic(() => import("../components/PortSection"));
 
 // Log content to console
 
@@ -21,6 +17,7 @@ const ServiceSection = dynamic(() => import("../components/ServiceSection"));
 export default function Home() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true); // Loading state
+  const [clients, setClients] = useState(null);
 
   useEffect(() => {
     setLoading(true); // Set loading to true before fetch
@@ -42,15 +39,34 @@ export default function Home() {
         console.error("Error fetching data:", error);
         setLoading(false); // Set loading to false even if there's an error
       });
+
+    client
+      .fetch(
+        `
+        *[_type == "client"]{
+          
+          image
+        }
+      `
+      )
+      .then((fetchedData) => {
+        setClients(fetchedData);
+        setLoading(false);
+        // Set loading to false after data is fetched
+        console.log(fetchedData);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        setLoading(false); // Set loading to false even if there's an error
+      });
   }, []);
 
   return (
     <main className="">
-      {console.log(data)}
       <Herosection />
       <WelcomeSection />
       <ServiceSection data={data} />
-      <PortSection />
+      <PortSection data={clients} />
       <ContactSection />
     </main>
   );

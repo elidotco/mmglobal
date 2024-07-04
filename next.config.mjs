@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "s3-us-west-2.amazonaws.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",
+      },
     ],
   },
 };
