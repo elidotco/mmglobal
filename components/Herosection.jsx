@@ -11,7 +11,7 @@ const Herosection = () => {
           YOUR IDEAS
         </h1>
       </div>
-      <title>Hello</title>
+
       {/* Learn More Button */}
       <div className="flex  md:flex-row gap-10 flex-col w-full items-center px-5 md:px-10 lg:px-32">
         <div className="lg:mt-20">
