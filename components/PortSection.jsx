@@ -82,6 +82,18 @@ const PortSection = ({ data }) => {
               </div>
             );
           })}
+          {data?.map((item, index) => {
+            return (
+              <div className="slide" key={index}>
+                <Image
+                  src={urlFor(item.image).width(200).url()}
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
 
