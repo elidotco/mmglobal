@@ -98,6 +98,7 @@ body {
 .slider .slide {
   height: 100px;
   width: 250px;
+  display: flex;
 }
 .slide > img {
   width: 50%;
